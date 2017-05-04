@@ -11,7 +11,9 @@
   <!-- <p> First hero: {{vm.superHeros[0]}} </p> -->
 
 <h1> Super Hero Lists </h1>
-<div ng-repeat = "superHero in vm.superHeros">
+<h2> Search Super Hero Number </h2>
+<input type="text" ng-model="searchsuperHeros.names">
+<div ng-repeat = "superHero in vm.superHeros | filter: searchsuperHeros.names">
   <p> {{$index + 1}}. </p>
   <p> Name: {{superHero.name}}. </p>
   <p> Number: {{superHero.number}}. </p>
