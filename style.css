@@ -15,7 +15,7 @@ img {
   margin-bottom: 15px;
 }
 
-p {
+p, h2 {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -41,4 +41,12 @@ h1 {
 
 h2 {
   color: blue;
+}
+
+input {
+  width: 150px;
+  margin:0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }

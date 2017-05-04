@@ -52,4 +52,10 @@ angular
 
   function SuperHerosControllerFuction () {
     this.superHeros = superheroList
+    this.newsuperHero = ""
+    this.addsuperHero = function () {
+      let superHero = this.newsuperHero
+      this.superHeros.push(superHero)
+      this.newsuperHero = ""
+    }
   }

@@ -26,5 +26,18 @@
          <p> <img ng-src="{{superHero.img}}" ng-show="vm.viewImage[$index]"> </p>
 
         </div>
+
+        <div class="add">
+          <h2> Add New Super Hero </h2>
+            <input type="text" ng-model="vm.newsuperHero.name">
+              <p> {{vm.newsuperHero}} </p>
+            <input type="text" ng-model="vm.newsuperHero.number">
+              <p> {{vm.newsuperHero}} </p>
+            <input type="text" ng-model="vm.newsuperHero.group">
+              <p> {{vm.newsuperHero}} </p>
+            <input type="text" ng-model="vm.newGrumblr.img">
+              <p> {{vm.newsuperHero}} </p>
+                <button ng-click="vm.addsuperHero()">Add Super Hero</button>
+        </div>
     </body>
 </html>
