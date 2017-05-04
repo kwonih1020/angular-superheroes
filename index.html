@@ -8,11 +8,15 @@
   <script src="app.js"></script>
 </head>
 <body ng-controller="SuperHerosController as vm">
-  <p> First hero: {{vm.superHeros[0]}} </p>
+  <!-- <p> First hero: {{vm.superHeros[0]}} </p> -->
 
-<h1> Super Heros </h1>
+<h1> Super Hero Lists </h1>
 <div ng-repeat = "superHero in vm.superHeros">
-  <p> {{index + 1}}. {{superHero.name}}, {{superHero.number}}, {{superHero.group}}, <img src="{{superHero.img}}"> </p>
+  <p> {{$index + 1}}. </p>
+  <p> Name: {{superHero.name}}. </p>
+  <p> Number: {{superHero.number}}. </p>
+  <p> Group: {{superHero.group}}. </p>
+  <p> <img src="{{superHero.img}}"> </p>
 </div>
 </body>
 </html>
