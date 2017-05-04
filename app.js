@@ -47,9 +47,9 @@ var superheroList = [
 
 
 angular
-  .module("herosNumsApp", [])
-  .controller("HerosNumsController", [HerosNumsControllerFuction])
+  .module("superHeroApp", [])
+  .controller("SuperHerosController", [SuperHerosControllerFuction])
 
-  function HerosNumsControllerFuction () {
-    this.superheros = superheroList
+  function SuperHerosControllerFuction () {
+    this.superHeros = superheroList
   }

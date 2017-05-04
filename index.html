@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="herosNumsApp">
+<html lang="en" ng-app="superHeroApp">
 <head>
   <meta charset="UTF-8">
   <title>Superhero Phone Book</title>
@@ -7,7 +7,12 @@
   <link rel="stylesheet" href="style.css">
   <script src="app.js"></script>
 </head>
-<body>
-  {{5 + 5}}
+<body ng-controller="SuperHerosController as vm">
+  <p> First hero: {{vm.superHeros[0]}} </p>
+
+<h1> Super Heros </h1>
+<div ng-repeat = "superHero in vm.superHeros">
+  <p> {{index + 1}}. {{superHero.name}}, {{superHero.number}}, {{superHero.group}}, <img src="{{superHero.img}}"> </p>
+</div>
 </body>
 </html>
