@@ -48,3 +48,8 @@ var superheroList = [
 
 angular
   .module("herosNumsApp", [])
+  .controller("HerosNumsController", [HerosNumsControllerFuction])
+
+  function HerosNumsControllerFuction () {
+    this.superheros = superheroList
+  }
