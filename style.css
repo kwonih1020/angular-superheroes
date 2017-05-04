@@ -14,7 +14,13 @@ img {
   width: 300px;
 }
 
-body {
+p {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.titles {
   display: flex;
   align-items: center;
   flex-direction: column;
